@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            background-color: black;
+            width: 300px;
+            height: 200px;
+            left: 35%;
+            top: 25%;
+            position: absolute;
+            display: none;
+            animation: xyz 1s 1;
+        }
+        @keyframes xyz{
+            0%{transform: scale(0);}
+        }
+    </style>
+    <script>
+    var t=0;
+    function showKwid()
+    {
+     setTimeout(showKwid,1000);
+
+              t=t+1;
+              if(t==15)
+              {
+                document.getElementById("x").style.display='block';
+              }
+    }
+</script>
+</head>
+<body onload="showKwid()">
+
+    <div id="x" style="display: none;">
+    <img src="b1.webp" alt="" width="30%" height="200px">
+    <h3>INTERESTED IN THE NEW RENAULT?</h3>
+
+
+    
+        <label for="fname"> Name</label>
+        <br>
+        <input type="text" id="fname" name="firstname" placeholder="Your full name..">
+        <br>
+        <label for="">Contact No.</label>
+        <br>
+        <input type="number" minlength="10">
+        <br>
+        <label for="">Select City</label>
+        <br>
+        <select style="width: 170px;" id="City" name="City">
+            <option value="" disabled>Select City</option>
+            <option value=>Hisar</option>
+            <option value=>Rohtak</option>
+            <option value=>Bhiwani</option>
+            <option value=>Karnal</option>
+            <option value=>Faridabad</option>
+        </select>
+        
+        <br>
+        <label for="">Select Dealership</label>
+        <br>
+        <input type="text" name="" id="">
+        <br>
+        <br>
+        <input type="submit">
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>   body{
+        padding: 0;
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    
+    .main{
+        display: flex;
+    }
+    .logo{
+        width: 10%;
+        height: 120px;
+        background-color: black;
+    }
+    .logo img{
+        height: 120px;
+    }
+    .menu{
+        width: 50%;
+        height: 120px;
+        background-color: black;
+        display: inline-flex;
+    }
+
+
+.navbar {
+overflow: hidden;
+padding-top: 45px;
+padding-left: 60px;
+display: flex;
+font-size: small;
+width: 120%;
+background-color: black;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.navbar a {
+float: left;
+font-size: small;
+color: white;
+text-align: center;
+padding: 10px 10px;
+text-decoration: none;
+}
+
+.dropdown {
+float: left;
+overflow: hidden;
+}
+
+.dropdown .dropbtn {
+font-size: smaller;  
+border: none;
+outline: none;
+color: white;
+padding: 11px 11px;
+background-color: inherit;
+font: inherit;
+margin: 0;
+}
+.dropdown .drop{
+font-size: 12.5px;
+padding-top: 4.5px;
+border: none;
+outline: none;
+background-color: inherit;
+margin: 0;
+}
+.dropdown .drop button{
+border: none;
+outline: none;
+background-color: inherit;
+margin: 0;
+
+}
+.dropdown .drop a{
+
+font:inherit
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: green;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: transparent;
+width: 100%;
+left: 0;
+box-shadow: 0px 18px 18px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content .header {
+background: red;
+font-size: large;
+padding: 8px;
+color: white;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+float: left;
+width: 23.33%;
+padding: 10px;
+background-color: black;
+height: 300px;
+}
+
+.column a {
+float: none;
+color: white;
+padding: 12px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.column a:hover {
+background-color: red;
+}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+    .searchbar{
+        width: 40%;
+        height: 120px;
+        background-color:black;
+        display: block;
+        
+    }
+    .bookmenu a{
+        padding: 5px;
+        margin-left: 60px;
+        font-size: xx-small;
+        text-decoration: none;
+        color: aliceblue;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    
+    }
+    .contactbar{
+        padding-top: 35px;
+        padding-left: 260px;
+        display:block;
+;
+        font-size: small;
+    }
+    .contactbar img{
+        width: 28px;
+        
+    
+        padding: 6px;
+    }
+    .contactbar a{
+        
+        text-decoration: none;
+        color: aliceblue;
+        overflow: hidden;
+    }
+    .contactbar links{
+        float: right;
+        display: flex;
+    }
+
+
+
+    .offers a img{
+        width: 100%;
+        height: 250px;
+
+    }
+    .main3{
+        display: flex;
+    }
+    .main button a{
+        text-decoration: none;
+        color: aliceblue;
+    }
+    
+    .mn1{
+        background-color: white;
+        width: 33.33%;
+        height: 300px;
+    }
+    .mn1 img{
+        padding: 10px;
+        width: 100%;
+        height: 70%;
+    }
+    .mn2{
+        background-color: white;
+        width: 33.33%;
+        height: 300px;
+    }
+    .mn2 img{
+        padding: 10px;
+        width: 100%;
+        height: 70%;
+    }
+    .mn3{
+       background-color: white;
+       width: 33.33%;
+       height: 300px;
+    }
+    .mn3 img{
+        padding: 10px;
+        width: 100%;
+        height: 70%;
+    }
+    .main4{
+        display: flex;
+    }
+    .v1{
+        width: 25%;
+        height: 120px;
+        background-color:black;
+    }
+    .v1 a{
+          text-decoration: none;
+          color: aliceblue;
+         margin-left: 120px; 
+              
+    }
+    .v1 a img{
+        margin-top: 40px;
+       margin-left: 40px;
+       height: 50px;
+    }
+    
+    .v2{
+        width: 25%;
+        height: 120px;
+        background-color: black;
+    }
+    .v2 a{
+        text-decoration: none;
+          color: aliceblue;
+        
+        margin-left: 120px; 
+             
+   }
+   .v2 a img{
+    margin-top: 40px;
+       margin-left: 40px;
+       height: 50px;
+   }
+    
+    .v3{
+        width: 25%;
+        height: 120px;
+        background-color: black;
+    }
+    .v3 a{
+        text-decoration: none;
+          color: aliceblue;
+        margin-left: 90px; 
+             
+   }
+   .v3 a img{
+       margin-top: 40px;
+       height: 50px;
+   }
+    
+    .v4{
+        width: 25%;
+        height: 120px;
+        background-color: black;
+    }
+    .v4 a{
+        
+        color: white;
+        margin-left:45px;
+             
+   }
+   .v4 a img{
+       margin-top: 40px;
+       margin-left: 40px;
+       height: 50px;
+   }
+   .vf4 a{
+    text-decoration: none;
+    
+    
+   }
+   .main5{
+    display: flex;
+   }
+   .nx1{
+    text-decoration: none;
+    background-color:gainsboro;
+    width: 20%;
+    height:300px;
+   }
+   .nx1 a{
+    text-decoration: none;
+    color: black;
+   }
+   .nx1 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+   
+   
+   .nx2{
+    
+    background-color: gainsboro;
+    width: 20%;
+    height:300px;
+   }
+   .nx2 a{
+    text-decoration: none;
+    color: black;
+   }
+
+   .nx2 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+   .nx3{
+    background-color: gainsboro;
+    width: 20%;
+    height:300px;
+   }
+   .nx3 a{
+    text-decoration: none;
+    color: black;
+   }
+   .nx3 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+   .nx4{
+    background-color: gainsboro;
+    width: 20%;
+    height:300px;
+   }
+   .nx4 a{
+    text-decoration: none;
+    color: black;
+   }
+   .nx4 a:hover{
+    color: red;
+    text-decoration: underline;
+}
+   .nx5{
+    background-color: gainsboro;
+    display: block;
+    width: 20%;
+    height:300px;
+   }
+   .nx5 a{
+    text-decoration: none;
+    color: black;
+   }
+   .nx5 a:hover{
+    color: red;
+    text-decoration: underline;
+    
+}
+   ul{
+    list-style-type: none;
+   }
+   h5{
+    text-align: center;
+   }
+   li a{
+    
+   font-size: smaller;
+   }
+   .social{
+    display: flex;
+    padding: 2px;
+   }
+   .social a img{
+    display: block;
+    width: 30px;
+    margin: 4px;
+    
+   }
+   .main6{
+    display: flex;
+   }
+   .f1{
+    background-color: #717171;
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 4px;
+    
+      width: 70%;
+      height: 45px;
+   }
+   .f1 li{
+    margin: 10px;
+    font-size: smaller;
+    text-decoration: none;
+   
+   }
+   .f1 li a{
+    color: aliceblue;
+    text-decoration: none;
+   }
+   .f2{
+    background-color: #717171;
+    width: 30%;
+    height: 45px;
+    color: aliceblue;
+    padding-top: 2px;
+    font-size: xx-small;
+   
+   }
+   .f2 p{
+    margin-top: 12px;
+   }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="logo"><a href="renaulthome.html"><img src="logo.png" alt=""></a></div>
+        <div class="menu">
+            
+
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">VEHICALS  
+                    
+                
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <a href="book">register your interest</a>
+                                <a href="#">find a dealer</a>
+                                <a href="#">book a test drive</a>
+                                <a href="#">contact us</a>
+                              </div>
+                              <div class="column">
+                                <a href="kwid.html"><img src="kwid.png" alt="" style="width:100%;"></a>
+                                <h5  style="color: white; text-align: center;"> KWID</h5>
+                              
+                              </div>
+                              <div class="column">
+                                <a href="triber.html"><img src="triber.png" alt="" style="width:100%;"></a>
+                                <h5  style="color: white; text-align: center;">TRIBER</h5>
+                              </div>
+                              <div class="column">
+                                  <a href="kiger.html"><img src="kiger.png" alt="" style="width:100%;"></a>
+                                  <h5  style="color: white; text-align: center;"> KIGER</h5>
+                              </div>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            
+                <div class="dropdown">
+                    <button class="dropbtn">RENAULT SERVICES 
+                    
+                
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <h3 style="color: red;"> Renault services</h3>
+                                <a href="#">Renault warranty</a>
+                                <a href="#">Renault assist</a>
+                                <a href="#">Renault easy care</a>
+                                <a href="#">genuine parts</a>
+                                <a href="#">owner's manual</a>
+                              </div>
+                              <div class="column">
+                                <h3 style="color: red;"> Renault services</h3>
+                                <a href="#"> accessories</a>
+                                <a href="#">institutional sales</a>
+                                <a href="#">exchange & upgrade</a>
+                                <a href="#">Renault virtual assistant</a>
+                                <a href="#">Renault virtual studio</a>
+                               
+                              
+                              </div>
+                             
+                        </div>
+                    </div>
+                </div>
+            
+                        <div class="dropdown">
+                            <button class="dropbtn">DISCOVER RENAULT
+                            
+                        
+                            </button>
+                            <div class="dropdown-content">
+                                <div class="row">
+                                    <div class="column">
+                                        <H3 style="color: RED;"> The brand</H3>
+                                        <a href="#">Renault in India</a>
+                                        <a href="#">Groupe Renault
+                                        </a>
+                                        <a href="#">Renault awards</a>
+                                        <a href="#">Renault CSR</a>
+                                       
+                                       
+                                      </div>
+                                      <div class="column">
+                                        <H3 style="color: RED;"> Discover Renault</H3>
+                                        <a href="#">working at Renault</a> 
+                                         <a href="#"> careers</a>
+                                         <a href="#">  motorsport</a> 
+                                        </div>
+            
+                                      <div class="column">
+                                        <h3 style="color: red;">News</h3>
+                                        <a href="#">Renault x Roland Garros</a>
+                                      </div>
+                                     
+                                </div>
+                         </div>
+                    </div>
+            
+            
+            
+            
+                    <div class="dropdown">
+                        <button class="drop"><a href="finance.html">FINANCE</a></button>
+                                                
+                    
+                        
+                        
+                    
+                
+                
+                        
+                    </div>
+                    
+            
+                                <div class="dropdown">
+                                    <button class="dropbtn">OFFERS 
+                                    
+                                
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <div class="row">
+                                            <div class="column">
+                                                <h3 style="color: red;">   Renault Offers</h3>
+                                                <a href="triber.html">Renault TRIBER Offers</a>
+                                                <a href="kwid.html">Renault KWID Offers</a>
+                                                <a href="kiger.html">Renault KIGER Offers</a>
+                                              
+                                                
+                                              </div>
+                                              <div class="column">
+                                               
+                                              </div>
+                                              <div class="column">
+                                              
+                                              </div>
+                                             
+                                        </div>
+                            
+                            
+                                    </div>
+                                </div>
+                            
+                    
+            
+             
+                         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+              
+        </div>
+        <div class="searchbar">
+        <div class="bookmenu">
+            <a href="#book your Renault" class="active"><b>book your Renault</b></a>
+            <a href="#sanitary measures"><b>sanitary measures</b></a>
+            <a href="#register your interest"><b>register your interest</b></a>
+
+        </div>
+        <div class="contactbar">
+            <div class="img">
+               <a href="#"> <img src="search.png" alt=""></a>
+               <a href="#"> <img src="navi.png" alt=""></a>
+               <a href="#"><img src="car.png" alt=""></a>
+               <a href="#"> <img src="contact.png" alt=""></a>
+            </div>
+          
+    </div>
+    </div>
+    </div>
+    <br>
+
+
+    <div style="background-color:BLACK; COLOR:aliceblue;" class="jumbotron text-center">
+        <h1>BOOK YOUR RENAULT NOW!</h1>
+        <h3>IN JUST A FEW STEPS</h3> 
+      </div>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>RENAULT KWID</h3>
+            <p><img src="kwid.png" alt="" width="110%" height="300px"></p>
+            <p>Minimum Booking Amount:-11000/-</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>RENAULT TRIBER</h3>
+            <p><img src="triber.png" alt=""  width="110%" height="300px"></p>
+            <p>Minimum Booking Amount:-11000/-</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>RENAULT KIGER</h3>        
+            <p><img src="kiger.png" alt=""  width="110%" height="300px"></p>
+            <p>Minimum Booking Amount:-11000/-</p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      
+<div class="container">
+    <h2 align="center">BOOK YOUR RENAULT </h2>
+    <form class="form-horizontal" action="/action_page.php">
+      <div class="form-group">
+          <label class="control-label col-sm-2" for="fName">First Name:</label>
+          <div class="col-sm-10">
+            <input type="fName" class="form-control" id="fName" placeholder="Enter First Name" name="fName">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for=";lName">Last Name:</label>
+          <div class="col-sm-10">
+            <input type="lName" class="form-control" id="lName" placeholder="Enter Last Name" name="lName">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for=";lName">Phone No.</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="phoneno" placeholder="Enter Phone Name" name="phoneno">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" for=";lName">Address</label>
+          <div class="col-sm-10">
+              <textarea name="Address" id="" cols="125" rows="2"></textarea>
+          
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">PAN NO.</label>
+          <div class="col-sm-10">
+            <input type="PAN NO." class="form-control" id="PAN no." placeholder="Enter Your PAN No." name="PAN No.">
+          </div>
+        </div>
+  
+        
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Choose YOUR RENAULT</label>
+          <div class="col-sm-10">
+              <div class="checkbox">
+                  <label><input type="checkbox" value="">KWID</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" value="">TRIBER</label>
+                </div>
+                <div class="checkbox disabled">
+                  <label><input type="checkbox" value="" disabled>KIGER</label>
+                </div>
+          </div>
+        </div>
+             
+             
+     
+  
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="email">Email:</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">BOOKING AMOUNT</label>
+        <div class="col-sm-10">          
+          <input type="password" class="form-control" id="pwd" placeholder="Enter Booking Amount value Minimum 11000/-" name="pwd">
+        </div>
+      </div>
+      
+  
+      <div class="form-group">        
+        <div class="col-sm-offset-2 col-sm-10">
+          <button type="submit" class="btn btn-default">BOOK NOW!</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  
+    
+  <div class="offers"><a href="#"><img src="offers.webp" alt=""></a></div>
+
+  <br>
+  <div>
+      <h2 style="text-align:center ;">FIRST-CLASS SERVICES TO KEEP YOU GOING</h2>
+  </div>
+  <div class="main3">
+      <div class="mn1"><a href="#"><img src="kw1.webp" alt=""></a></div>
+      <div class="mn2"><a href="#"><img src="trib1.webp" alt=""></a></div>
+      <div class="mn3"><a href="#"><img src="kigerban.webp" alt=""></a></div>
+  </div>
+  <div class="main4">
+      <div class="v1"><a href="#"><img src="pc1.svg" alt=""></a><br>
+          <div class="vf1"><a href="#">register your interest</a></div></div>
+      <div class="v2"><a href="#"><img src="pc2.svg" alt=""></a>
+      <br> <div class="vf2"><a href="#">book a test drive</a></div></div>
+      <div class="v3"><a href="#"><img src="pc3.svg" alt=""></a><br>
+          <div class="vf3"><a href="#">find a dealer</a></div></div>
+      <div class="v4"><a href="#"><img src="pc4.svg" alt=""></a><br>
+          <div class="vf4"><a href="#">download brochure</a></div></div>
+  </div>
+  <br>
+  <div class="main5">
+      <div class="nx1">
+          <h5> customer service</h5>
+          <ul class="cx1">
+              <li><a href="#">owner's manual</a></li>
+              <li><a href="#">faq</a></li>
+              <li><a href="#">contact us</a></li>
+              <li><a href="#">information request</a></li>
+              <li><a href="#">register a complaint</a></li>
+          </ul>
+      </div>
+      <div class="nx2">
+          <h5> Renault tools</h5>
+          <ul>
+              <li><a href="#">Renault virtual studio</a></li>
+              <li><a href="#">Renault virtual assistant</a></li>
+              <li><a href="#">book a test drive</a></li>
+              <li><a href="#">book your Renault</a></li>
+              <li><a href="#">refer a Renault</a></li>
+          </ul>
+      </div>
+      <div class="nx3">
+          <h5> owning a Renault</h5>
+          <ul>
+              <li><a href="#">Renault services</a></li>
+              <li><a href="#">Renault Connect</a></li>
+              <li><a href="#">customer services</a></li>
+              <li><a href="#">maintenance cost</a></li>
+              
+          </ul>
+      </div>
+      <div class="nx4">
+           <h5 style="text-align: center;">more from Renault</h5>
+          <ul>
+              <li><a href="#">investors</a></li>
+              <li><a href="#">motorsports</a></li>
+              <li><a href="#">concept cars</a></li>
+              <li><a href="#">press and media</a></li>
+              <li><a href="#">dealer network</a></li>
+          </ul></div>
+      <div class="nx5">
+          <div class="s5"><h5 style="text-align: center;">Renault social</h5></div>
+          
+       <br>
+       <div><ul class="social">
+          <li><a href="#"><img src="fb.png" alt=""></a></li>
+          <br>
+          <li><a href="#"><img src="tw.png" alt=""></a></li>
+          <br>
+          <li><a href="#"><img src="insta.jpg" alt=""></a></li>
+          <br>
+          <li><a href="#"><img src="yt.png" alt=""></a></li>
+          <br>
+          <li><a href="#"><img src="in.png" alt=""></a></li>
+          <br>
+          <li><a href="#"><img src="wt.png" alt=""></a></li></div>
+       
+          
+
+      </ul> 
+      </div>
+      
+      
+
+      </div>
+  </div>
+
+  <div class="main6">
+      <div class="f1">
+          
+              <li><a href="#">privacy and legal</a></li>
+              <li><a href="#">personal data</a></li>
+              <li><a href="#">terms and conditions</a></li>
+              <li><a href="#">cookie policy</a></li>
+              
+      
+      </div>
+      <div class="f2">   <p>© Renault 2017 - 2022</p> </div>
+  </div>
+
+
+</body>
+</html>

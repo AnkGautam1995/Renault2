@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 30%;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+input[type=number], select, textarea {
+  width: 30%;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:red;
+}
+
+.container {
+  border-radius: 5px;
+  background-color:black;
+  padding: 10px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+    </style>
+</head>
+<body onload="showDiv()">
+    <a href="#" onclick="document.getElementById('x').style.display='block' "></a>
+    <img src="b1.webp" alt="">
+    <h3>INTERESTED IN THE NEW RENAULT?</h3>
+    <form">
+        <label for="fname"> Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your full name..">
+        <br>
+    
+        <label for="lname">Contact</label>
+        <input type="number" max="10" id="lname" name="lastname" placeholder="Your Contact no.">
+         <br>
+
+        <label for="City">Select City</label>
+        <select id="City" name="City">
+          <option value=>Hisar</option>
+          <option value=>Rohtak</option>
+          <option value=>Bhiwani</option>
+          <option value=>Karnal</option>
+          <option value=>Faridabad</option>
+
+        </select>
+        <br>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Renault KWID</option>
+          <option value="saab">Renault TRIBER</option>
+          <option value="fiat">Renault KIGER</option>
+          
+        </select>
+      
+        <input type="submit" value="Submit">
+      </form>
+    <div>
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
